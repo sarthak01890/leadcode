@@ -13,16 +13,13 @@ public:
                 right--;
 
             }
-            else if (tolower(s[left])!=tolower(s[right])){
-                return false;
-
+           else if (tolower(s[left]) == tolower(s[right])) {
+                left++;
+                right--;
             }
             else {
-                left ++;
-                right--;
-
+                return false;
             }
-
         }
 
         return true;
